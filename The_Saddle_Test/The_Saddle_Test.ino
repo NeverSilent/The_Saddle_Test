@@ -5,7 +5,7 @@
 #define DIRLeft 23
 #define DIRRight 25
 #define XAxis 4
-#define YAxis 13
+#define YAxis 14
 
 boolean val = true;
 
@@ -36,12 +36,14 @@ void loop() {
   //Serial.print(analogRead(ButtonTwo));
   //Serial.print("two");
   //Serial.println();
+  Serial.println(analogRead(XAxis));
   Serial.println(analogRead(YAxis));
 
-  ledcWrite(6, map(analogRead(YAxis), 0, 4096, 0, 255));
+  ledcWrite(6, (map(analogRead(YAxis), 1780, 4095, 0, 255)));
+  ledcWrite(10,255);
 
-  //digitalWrite(DIRLeft, HIGH);
-  //digitalWrite(DIRRight, HIGH);
+  digitalWrite(DIRLeft, HIGH);
+  digitalWrite(DIRRight, HIGH);
  /*
   if((analogRead(ButtonOne)) == 0){
     val = true;
