@@ -25,6 +25,7 @@ void setup() {
   pinMode(INPUT_PULLUP, ButtonTwo);
 
   pinMode(INPUT, XAxis);
+  pinMode(INPUT, YAxis);
 }
 
 void loop() {
