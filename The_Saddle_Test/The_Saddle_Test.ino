@@ -40,7 +40,7 @@ void loop() {
   Serial.println(analogRead(YAxis));
 
   ledcWrite(6, (map(analogRead(YAxis), 1780, 4095, 0, 255)));
-  ledcWrite(10,255);
+  //ledcWrite(10,255);
 
   digitalWrite(DIRLeft, HIGH);
   digitalWrite(DIRRight, HIGH);
