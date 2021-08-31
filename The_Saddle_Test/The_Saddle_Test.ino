@@ -28,7 +28,12 @@ void setup() {
   pinMode(INPUT, YAxis);
 }
 
-void loop() {
+void loop() { 
+
+   /*Currently this loop will display the value of axies
+   * Also it will only output the yaxis but there are comments
+   * That will make the motors run full on or off depending on button press
+   */
 
   //Serial.print(analogRead(ButtonOne));
   //Serial.print("one");
