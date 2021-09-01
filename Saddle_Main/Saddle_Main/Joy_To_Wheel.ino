@@ -25,6 +25,7 @@ void setup() {
 
 void loop() {
   //The following is the pesudocode for the conversion
+  //Have to scale the 16bit input to 0 -> 200 and then subtract 100 then invert it
   /*
     Get X and Y from the Joystick, do whatever scaling and calibrating you need to do based on your hardware.
     Invert X
