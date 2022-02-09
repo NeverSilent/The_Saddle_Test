@@ -4,10 +4,13 @@
 #define PWMRight 19
 #define DIRLeft 23
 #define DIRRight 25
-#define XAxis 4
-#define YAxis 14
+#define XAxis 2
+#define YAxis 13
 
 boolean val = true;
+
+int xVal;
+int yVal;
 
 void setup() {
   Serial.begin(9600);
@@ -42,9 +45,13 @@ void loop() {
   //Serial.print("two");
   //Serial.println();
   Serial.println(analogRead(XAxis));
-  Serial.println(analogRead(YAxis));
+  //Serial.println(analogRead(YAxis));
 
-  ledcWrite(6, (map(analogRead(YAxis), 1780, 4095, 0, 255)));
+  xVal = analogRead(XAxis);
+  yVal = analogRead(YAxis);
+
+  //constrain(xVal, 600, 4095);
+  ledcWrite(6, (map(xVal, 0, 4095, 0, 255)));
   //ledcWrite(10,255);
 
   digitalWrite(DIRLeft, HIGH);
