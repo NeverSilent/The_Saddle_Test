@@ -12,10 +12,10 @@
 
 #define ButtonOne 33
 #define ButtonTwo 26
-#define PWMLeft 18
-#define PWMRight 19
-#define DIRLeft 23
-#define DIRRight 25
+#define PWMLeft 3
+#define PWMRight 9
+#define DIRLeft 2
+#define DIRRight 10
 #define XAxis 4
 #define YAxis 14
 #define Power 35 //subject to change to real pinout
