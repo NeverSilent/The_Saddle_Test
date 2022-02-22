@@ -69,8 +69,8 @@ void setup() {
 }
 
 void loop() {
-  //**DEBUG**//
-    
+  
+  //**DEBUG**//  
   Serial.print(leftMotor);
   Serial.print(" ");
   Serial.print(rightMotor);
